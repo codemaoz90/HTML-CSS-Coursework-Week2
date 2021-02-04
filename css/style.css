@@ -3,7 +3,12 @@
 body {
 	font-family: "Roboto", sans-serif;
 	-webkit-font-smoothing: antialiased;
+	font-weight: 100;
 }
+h1 {
+	font-weight: 100;
+}
+
 /* Utilities */
 
 /* Main styles */
@@ -35,7 +40,7 @@ body {
 	font-weight: 500;
 }
 .navbar .navigation-menu .navigation-link:hover {
-	color: orange;
+	color: #f15b2a;
 	font-weight: 500;
 }
 
@@ -44,7 +49,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-weight: 100;
 	background-image: url("/img/first-background.jpg");
 	height: 350px;
 	background-position: center;
@@ -61,4 +65,52 @@ body {
 	padding: 10px 20px;
 	border-radius: 3px;
 	font-size: 12px;
+}
+
+/* Section with the icons */
+.icons-container {
+	text-align: center;
+	margin-top: 80px;
+}
+.icons-items {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+/* Aditional */
+
+.additional {
+	width: 100%;
+	margin-top: 80px;
+	height: auto;
+	display: flex;
+}
+.additional .additional-img {
+	width: 50%;
+}
+.additional .additional-img img {
+	max-width: 100%;
+}
+.additional .additional-text {
+	width: 50%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fab1a0;
+	opacity: 0.9;
+}
+.additional-text p {
+	color: rgb(85, 82, 82);
+	font-weight: 400;
+	font-style: italic;
+}
+.additional-text button {
+	background: #f15b2a;
+	color: white;
+	font-size: 12px;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 3px;
 }
