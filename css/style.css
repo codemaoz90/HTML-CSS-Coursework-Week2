@@ -1,19 +1,64 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+/* Utilities */
+
+/* Main styles */
+
+/* HEADER */
+.header .navbar {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0px;
+}
+.navbar .logo {
+	width: 20px;
+	padding-left: 40px;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.navbar .navigation-menu {
+	display: flex;
+	align-items: center;
+	width: 40%;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+.navbar .navigation-menu .navigation-link {
+	text-decoration: none;
+	color: gray;
+	font-size: 12px;
+}
+.navbar .navigation-menu .navigation-link.active {
+	font-weight: 500;
+}
+.navbar .navigation-menu .navigation-link:hover {
+	color: orange;
+	font-weight: 500;
+}
 
-
+/* HERO IMAGE */
+.hero-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 100;
+	background-image: url("/img/first-background.jpg");
+	height: 350px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.hero-image .hero-text {
+	text-align: center;
+	color: white;
+}
+.hero-image .hero-text button {
+	background: #f15b2a;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	font-size: 12px;
+}
